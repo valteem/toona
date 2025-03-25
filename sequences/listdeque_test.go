@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"my.play.go/toona/sequences"
+	"github.com/valteem/toona/sequences"
 )
 
 func TestListDeque(t *testing.T) {
@@ -26,7 +26,7 @@ func TestListDeque(t *testing.T) {
 		}
 		if v, e := q.DeleteLast(); v != i || e != nil {
 			t.Errorf("wrong DeleteLast() result: should be %v %v", v, e)
-		}		
+		}
 	}
 
 	v, e := q.DeleteFirst()

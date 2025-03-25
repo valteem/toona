@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"my.play.go/toona/sequences"
+	"github.com/valteem/toona/sequences"
 )
 
 func TestBasic(t *testing.T) {
@@ -28,7 +28,7 @@ func TestAfter(t *testing.T) {
 			t.Errorf("wrong node value: get %+v, expect %+v", r, e)
 		}
 		p, _ = l.After(p)
-	}	
+	}
 }
 
 func TestBefore(t *testing.T) {
@@ -43,7 +43,7 @@ func TestBefore(t *testing.T) {
 			t.Errorf("wrong node value: get %+v, expect %+v", r, e)
 		}
 		p, _ = l.Before(p)
-	}	
+	}
 }
 
 func TestInsertBeforeAfter(t *testing.T) {

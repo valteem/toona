@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"my.play.go/toona/sequences"
+	"github.com/valteem/toona/sequences"
 )
 
 func TestIList(t *testing.T) {

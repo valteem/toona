@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"my.play.go/toona/sorting"
+	"github.com/valteem/toona/sorting"
 )
 
 func TestInsertionSort(t *testing.T) {

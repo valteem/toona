@@ -3,8 +3,7 @@ package sequences_test
 import (
 	"testing"
 
-	"my.play.go/toona/sequences"
-
+	"github.com/valteem/toona/sequences"
 )
 
 func TestListStack(t *testing.T) {

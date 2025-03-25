@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"my.play.go/toona/sequences"
-	"my.play.go/toona/sorting"
+	"github.com/valteem/toona/sequences"
+	"github.com/valteem/toona/sorting"
 )
 
 func TestInsSortPosList(t *testing.T) {

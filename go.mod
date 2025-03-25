@@ -1,3 +1,3 @@
-module my.play.go/toona
+module github.com/valteem/toona
 
-go 1.20
+go 1.23.2

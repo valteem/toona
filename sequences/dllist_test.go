@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"my.play.go/toona/sequences"
+	"github.com/valteem/toona/sequences"
 )
 
 func TestDoubleLinkedList(t *testing.T) {
@@ -16,7 +16,7 @@ func TestDoubleLinkedList(t *testing.T) {
 	if _, e := l.RemoveFromHead(); e == nil {
 		t.Error("wrong RemoveFromHead() result: should not be nil")
 	}
-	
+
 	if _, e := l.RemoveFromTail(); e == nil {
 		t.Error("wrong RemoveFromTail() result: should not be nil")
 	}
@@ -43,5 +43,5 @@ func TestDoubleLinkedList(t *testing.T) {
 	if l.IsEmpty() == false {
 		t.Error("wrong IsEmpty() result: should be true")
 	}
-	
+
 }

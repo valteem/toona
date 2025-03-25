@@ -2,13 +2,14 @@ package orderedmap
 
 import (
 	"sync"
-	"my.play.go/toona/collections/slice"
+
+	"github.com/valteem/toona/collections/slice"
 )
 
-type OrderedMap[K comparable, V any] struct{
+type OrderedMap[K comparable, V any] struct {
 	mu sync.Mutex
-	s []K
-	m map[K]V
+	s  []K
+	m  map[K]V
 }
 
 func New[K comparable, V any]() OrderedMap[K, V] {
@@ -44,4 +45,3 @@ func (o *OrderedMap[K, V]) Values() []V {
 	o.mu.Unlock()
 	return s
 }
-

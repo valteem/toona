@@ -5,7 +5,7 @@ import (
 	"sort"
 	"testing"
 
-	"my.play.go/toona/collections/set"
+	"github.com/valteem/toona/collections/set"
 )
 
 func TestSetNew(t *testing.T) {
@@ -16,14 +16,14 @@ func TestSetNew(t *testing.T) {
 		t.Errorf("error set initialization - invalid length")
 	}
 
-// all slice elements are in map	
+	// all slice elements are in map
 	for _, v := range e {
 		if _, in := s[v]; !in {
 			t.Errorf("error set initialization - element not found %s", v)
 		}
 	}
 
-// all map keys are in slice
+	// all map keys are in slice
 	for k := range s {
 		in := false
 		for _, v := range e {
@@ -42,9 +42,9 @@ func TestSetNew(t *testing.T) {
 		if _, in := s[v]; in {
 			t.Errorf("error rremoving element %s", v)
 		}
-	
+
 	}
-	
+
 }
 
 func TestSetMerge(t *testing.T) {
@@ -75,7 +75,7 @@ func TestSetContains(t *testing.T) {
 
 	e := []string{"one", "two", "three"}
 	s := set.New(e...)
-	
+
 	if !s.Contains("three") {
 		t.Errorf("set must contain element %s", "three")
 	}

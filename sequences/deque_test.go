@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"my.play.go/toona/sequences"
+	"github.com/valteem/toona/sequences"
 )
 
 const (

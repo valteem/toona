@@ -4,7 +4,7 @@ package sorting
 
 import(
 	"reflect"
-	"my.play.go/toona/sequences"
+	"github.com/valteem/toona/sequences"
 )
 
 func InsSortPosList[T any](pl *sequences.PList[T], gt func(T, T) bool) {
