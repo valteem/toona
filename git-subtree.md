@@ -1,0 +1,1 @@
+[Using _git subtree_ to copy/move a folder from one repository to another](https://git-memo.readthedocs.io/en/latest/subtree.html)
